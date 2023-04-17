@@ -1,11 +1,10 @@
 import React from 'react';
-import { Grid, Slide } from '@mui/material';
+import { Grid } from '@mui/material';
 import Skill from './Skill';
 import './Skills.scss';
+import { skills } from '../../data/data';
 
 const Skills = () => {
-
-  const skills = ['html', 'css', 'bootstrap', 'sass', 'javascript', 'react', 'redux', 'git', 'github'];
 
   return (
     <section id='skills' className='skills-wrapper'>

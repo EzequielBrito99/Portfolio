@@ -10,8 +10,9 @@ function App() {
   return (
     <div className="container">
 
+      <Header />
+
       <div className="banner">
-        <Header />
         <ProfComponent />
       </div>
 
@@ -21,7 +22,7 @@ function App() {
         <Skills />
       </div>
 
-      <Projects/>
+      <Projects />
 
       <div className="lightColor">
         <Footer />

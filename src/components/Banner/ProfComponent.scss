@@ -1,7 +1,9 @@
+@import '../../settings.scss';
+
 .prof-wrapper {
   display: flex;
   gap: 2rem;
-  padding-top: 3rem;
+  padding-top: 6rem;
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
@@ -45,7 +47,9 @@
     display: inline-block;
     padding: 0.7rem 2rem;
     margin-top: 3rem;
+    margin-right: 1rem;
     cursor: pointer;
+    text-decoration: none;
     background-color: #01be96;
     border: none;
     color: #fff;
@@ -65,6 +69,16 @@
       -moz-transform: translateX(5px);
       -ms-transform: translateX(5px);
       -o-transform: translateX(5px);
+    }
+  }
+
+  .cv-button{
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+
+    &:hover{
+      background-color: #01be9513;
     }
   }
 }
@@ -124,34 +138,34 @@
     width: 30rem;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
-    animation: animation 3s infinite;
-    -webkit-animation: animation 3s infinite;
+    // animation: animation 3s infinite;
+    // -webkit-animation: animation 3s infinite;
 
-    @keyframes animation {
-      0% {
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-        -o-transform: translateY(0px);
-      }
+    // @keyframes animation {
+    //   0% {
+    //     transform: translateY(0px);
+    //     -webkit-transform: translateY(0px);
+    //     -moz-transform: translateY(0px);
+    //     -ms-transform: translateY(0px);
+    //     -o-transform: translateY(0px);
+    //   }
 
-      50% {
-        transform: translateY(-10px);
-        -webkit-transform: translateY(-10px);
-        -moz-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        -o-transform: translateY(-10px);
-      }
+    //   50% {
+    //     transform: translateY(-10px);
+    //     -webkit-transform: translateY(-10px);
+    //     -moz-transform: translateY(-10px);
+    //     -ms-transform: translateY(-10px);
+    //     -o-transform: translateY(-10px);
+    //   }
 
-      100% {
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-        -o-transform: translateY(0px);
-      }
-    }
+    //   100% {
+    //     transform: translateY(0px);
+    //     -webkit-transform: translateY(0px);
+    //     -moz-transform: translateY(0px);
+    //     -ms-transform: translateY(0px);
+    //     -o-transform: translateY(0px);
+    //   }
+    // }
 
     @media (max-width: 790px) {
       width: 20rem;

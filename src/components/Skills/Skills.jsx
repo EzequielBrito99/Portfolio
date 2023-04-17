@@ -8,7 +8,7 @@ const Skills = () => {
   const skills = ['html', 'css', 'bootstrap', 'sass', 'javascript', 'react', 'redux', 'git', 'github'];
 
   return (
-    <div id='skills' className='skills-wrapper'>
+    <section id='skills' className='skills-wrapper'>
       <h4>
         My <span className="green">skills</span>
       </h4>
@@ -19,7 +19,7 @@ const Skills = () => {
           ))
         }
       </Grid>
-    </div>
+    </section>
   );
 };
 

@@ -8,7 +8,8 @@ const Project = (props) => {
       <img src={`${process.env.PUBLIC_URL}/assets/projects/${img}.png`} alt="project" />
       <div className="disc">
         <h1>{name}</h1>
-        <p>{disc}
+        <p>{disc}<br/><br/>
+        Check: 
           {
             urlDemo
               ?

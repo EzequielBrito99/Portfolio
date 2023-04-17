@@ -23,8 +23,19 @@ body{
   position: relative;
 }
 
+.page{
+  margin-top: 5rem;
+}
+
 .green {
   color: #01be96;
+}
+
+.fixed-top{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 .slick-list, .slick-slider, .slick-track{

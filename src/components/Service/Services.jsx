@@ -8,8 +8,8 @@ import './Services.scss';
 
 const Services = () => {
   return (
-    <div className="services-wrapper" id="services">
-      <Slide direction="down">
+    <section className="services-wrapper" id="services">
+      <Slide direction="down" triggerOnce={true}>
         <h4>
           My <span className="green">services</span>
         </h4>
@@ -34,11 +34,11 @@ const Services = () => {
           <Card
             Icon={SettingsSystemDaydreamIcon}
             title={"integration"}
-            disc={`Integration with APIs, using fect, axios, etc.`}
+            disc={`API integrations using fetch, axios...`}
           />
         {/* </Slide> */}
       </div>
-    </div>
+    </section>
   );
 };
 

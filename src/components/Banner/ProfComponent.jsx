@@ -8,14 +8,14 @@ import './ProfComponent.scss';
 
 const ProfComponent = () => {
   return (
-    <div id="home" className="prof-wrapper">
+    <section id="home" className="prof-wrapper">
       {/* <Slide direction="left"> */}
       <div className="texts">
         <h4>
           Hello <span className="green">I'am</span>
         </h4>
         <h1 className="green">Ezequiel Brito</h1>
-        <Fade cascade>
+        <Fade cascade triggerOnce={true}>
           <h3>Front-End Developer</h3>
           <p>
             I am passionate about technology and I love creating unique
@@ -26,9 +26,10 @@ const ProfComponent = () => {
           </p>
         </Fade>
         <a href='https://wa.me/message/ST66CS7X7BHZM1' target='_blank'>Let's talk</a>
+        <a href='https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link' target='_blank' className="cv-button">Check CV</a>
         <div className="social">
           <p>Check out my</p>
-          <Fade className="social-icons" direction="right" delay={1000} cascade damping={.3}>
+          <Fade className="social-icons" direction="right" delay={1000} cascade damping={.3} triggerOnce={true}>
             <Tooltip arrow title="GutHub">
               <span>
                 <a href="https://github.com/EzequielBrito99" target='_blank'>
@@ -43,13 +44,6 @@ const ProfComponent = () => {
                 </a>
               </span>
             </Tooltip>
-            <Tooltip arrow title="CV">
-              <span>
-                <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link" target='_blank'>
-                  <FilePresentIcon fontSize='small' />
-                </a>
-              </span>
-            </Tooltip>
           </Fade>
         </div>
       </div>
@@ -57,12 +51,12 @@ const ProfComponent = () => {
       {/* <Slide direction="right"> */}
       <div className="profile">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/banner/bannerImage.svg`}
+          src={`${process.env.PUBLIC_URL}/assets/banner/bannerImageAnimated.svg`}
           alt="profile"
         />
       </div>
       {/* </Slide> */}
-    </div>
+    </section>
   );
 };
 

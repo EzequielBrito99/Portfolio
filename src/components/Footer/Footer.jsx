@@ -17,7 +17,7 @@ const Footer = () => {
     });
   };
   return (
-    <div className="footer-wrapper" id="footer">
+    <section className="footer-wrapper" id="footer">
       <div className="profile">
         {/* <Slide direction="right" delay={1}> */}
           <h2>Con<span className="green">tact</span></h2>
@@ -55,21 +55,21 @@ const Footer = () => {
               <h1>Check my <span className="green">profiles</span>:</h1>
             {/* </Slide> */}
             <div className="icons">
-              <Zoom>
+              <Zoom triggerOnce={true}>
                 <span>
                   <a href="https://github.com/EzequielBrito99" target='_blank'>
                     <GitHubIcon fontSize='small' />
                   </a>
                 </span>
               </Zoom>
-              <Zoom>
+              <Zoom triggerOnce={true}>
                 <span>
                   <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252" target='_blank'>
                     <LinkedInIcon fontSize='small' />
                   </a>
                 </span>
               </Zoom>
-              <Zoom>
+              <Zoom triggerOnce={true}>
                 <span>
                   <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link" target='_blank'>
                     <FilePresentIcon fontSize='small' />
@@ -78,7 +78,7 @@ const Footer = () => {
               </Zoom>
             </div>
             <div>
-              <Fade>
+              <Fade triggerOnce={true}>
                 <div className="arrowUp" onClick={scrollUp}>
                   <NorthIcon />
                 </div>
@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

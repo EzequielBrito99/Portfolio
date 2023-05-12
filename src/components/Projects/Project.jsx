@@ -13,7 +13,7 @@ const Project = (props) => {
           {
             urlDemo
               ?
-              <a href={urlDemo} target='_blank'>Live</a>
+              <a href={urlDemo} target='_blank' rel='noreferrer'>Live</a>
               :
               <span>private</span>
           }

@@ -6,4 +6,4 @@ export const projects = [
     { name: 'El Estante', img: 'ElEstante', disc: 'System for the management of bibliography and teaching modules.', urlDemo: 'https://ezequielbrito99.github.io/El-Estante-Front/' },
 ];
 
-export const skills = ['html', 'css', 'bootstrap', 'styled-components', 'tailwind', 'sass', 'javascript', 'react', 'redux', 'next', 'git', 'github'];
+export const skills = ['html', 'css', 'bootstrap', 'styled-components', 'tailwind', 'sass', 'javascript', 'typescript', 'react', 'redux', 'next', 'git', 'github'];

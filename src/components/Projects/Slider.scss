@@ -1,0 +1,38 @@
+@use '../../settings' as *;
+
+.slider-wrapper {
+  position: relative;
+  overflow-x: hidden;
+
+  .slick-track {
+    display: flex;
+  }
+}
+
+.buttons {
+  button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    color: #01be96;
+    border: none;
+    position: absolute;
+    top: 85%;
+    right: 7rem;
+    
+    @include desktop {
+      top: 45%;
+      right: 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .back {
+    left: 7rem;
+
+    @include desktop {
+      left: 2rem;
+    }
+  }
+}

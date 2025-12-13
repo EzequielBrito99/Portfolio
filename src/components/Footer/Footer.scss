@@ -1,0 +1,125 @@
+@use '../../settings' as *;
+
+.footer-wrapper{
+  margin-top: 2rem;
+  position: relative;
+  padding: 2rem 0;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
+  @media (max-width: 840px) {
+    width: 90%;
+  }
+
+  .flexbox{
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
+
+.profile{
+  flex: 1;
+  
+  h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+    @include desktop{
+      text-align: center;
+    }
+  }
+
+  .links {
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      a {
+        text-decoration: none;
+        color: lightgray;
+        &:hover {
+          color: orange;
+        }
+      }
+
+      @include desktop{
+        margin-bottom: .3rem;
+      }
+    }
+  }
+
+  .profiles {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 1.2rem;
+      padding: 1rem 0;
+
+      @include desktop{
+        padding-top: 0;
+      }
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+        border-radius: 50px;
+
+        &:hover {
+          background-color: orange;
+        }
+
+        a {
+          margin-top: 0.2rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.arrowUp-wrapper{
+  align-self: flex-end;
+
+  @include desktop{
+    align-self: flex-start;
+  }
+
+  .arrowUp{
+    width: 2rem;
+    height: 2rem;
+    background-color: #01be96;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+}

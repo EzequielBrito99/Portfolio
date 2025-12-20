@@ -4,7 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Tooltip from '@mui/material/Tooltip';
 import './ProfComponent.scss';
-import BannerImg from '../../assets/banner/bannerImageAnimated.svg'
+import BannerImg from '/assets/banner/bannerImageAnimated.svg'
 
 const ProfComponent = () => {
   return (

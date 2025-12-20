@@ -30,17 +30,17 @@ export const projects = [
     },
     {
         name: 'SIGE-Presupuestador',
-        img: 'Sige',
+        img: 'sige',
         disc: 'Budget generation system for the construction of livestock buildings.',
     },
     {
         name: 'Virtual Vendor Video',
-        img: 'VVV',
+        img: 'vvv',
         disc: 'Video creation system for digital marketing campaigns.',
     },
     {
         name: 'Ponme Saldo',
-        img: 'PS',
+        img: 'ps',
         disc: 'International mobile top-up platform.',
     },
 ];

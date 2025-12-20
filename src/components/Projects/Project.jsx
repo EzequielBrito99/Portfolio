@@ -5,7 +5,7 @@ const Project = (props) => {
   const { name, img, disc, urlDemo } = props.item;
   return (
     <div className='project-wrapper project'>
-      <img src={`/src/assets/projects/${img}.png`} alt="project" />
+      <img src={`/assets/projects/${img}.png`} alt="project" />
       <div className="disc">
         <h1>{name}</h1>
         <p>{disc}<br/><br/>

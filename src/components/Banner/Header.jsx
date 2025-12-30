@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   return (
-    <div className="lightColor fixed-top">
+    <div className="lightColor fixed-top" ata-testid="WebhookIcon">
       <div className='header-wrapper'>
         <div className='logo'>
           <span className='green'>

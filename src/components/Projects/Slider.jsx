@@ -57,10 +57,10 @@ const SliderComp = () => {
         {sliderProject}
       </Slider>
       <div className='buttons'>
-        <button onClick={() => arrowRef.current.slickPrev()} className='back'>
+        <button onClick={() => arrowRef.current.slickPrev()} className='back' data-testid='back-button'>
           <WestIcon />
         </button>
-        <button onClick={() => arrowRef.current.slickNext()} className='next'>
+        <button onClick={() => arrowRef.current.slickNext()} className='next' data-testid='next-button'>
           <EastIcon />
         </button>
       </div>

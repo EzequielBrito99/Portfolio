@@ -52,7 +52,7 @@ const SliderComp = () => {
     <Project item={item} key={i} />
   ))
   return (
-    <div className='slider-wrapper'>
+    <div className='slider-wrapper' data-testid='slider-component'>
       <Slider ref={arrowRef} {...settings}>
         {sliderProject}
       </Slider>

@@ -52,15 +52,15 @@ const SliderComp = () => {
     <Project item={item} key={i} />
   ))
   return (
-    <div className='slider-wrapper'>
+    <div className='slider-wrapper' data-testid='slider-component'>
       <Slider ref={arrowRef} {...settings}>
         {sliderProject}
       </Slider>
       <div className='buttons'>
-        <button onClick={() => arrowRef.current.slickPrev()} className='back'>
+        <button onClick={() => arrowRef.current.slickPrev()} className='back' data-testid='back-button'>
           <WestIcon />
         </button>
-        <button onClick={() => arrowRef.current.slickNext()} className='next'>
+        <button onClick={() => arrowRef.current.slickNext()} className='next' data-testid='next-button'>
           <EastIcon />
         </button>
       </div>

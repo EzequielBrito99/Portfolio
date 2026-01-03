@@ -41,21 +41,21 @@ const Footer = () => {
             <div className="icons">
               <Zoom triggerOnce={true}>
                 <span>
-                  <a href="https://github.com/EzequielBrito99" target='_blank' rel="noreferrer">
+                  <a href="https://github.com/EzequielBrito99" target='_blank' rel="noreferrer" data-testid="github-link">
                     <GitHubIcon fontSize='small' />
                   </a>
                 </span>
               </Zoom>
               <Zoom triggerOnce={true}>
                 <span>
-                  <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252" target='_blank' rel="noreferrer">
+                  <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252" target='_blank' rel="noreferrer" data-testid='linkedin-link'>
                     <LinkedInIcon fontSize='small' />
                   </a>
                 </span>
               </Zoom>
               <Zoom triggerOnce={true}>
                 <span>
-                  <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link" target='_blank' rel="noreferrer">
+                  <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link" target='_blank' rel="noreferrer" data-testid='cv-link'>
                     <FilePresentIcon fontSize='small' />
                   </a>
                 </span>

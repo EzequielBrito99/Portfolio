@@ -25,16 +25,16 @@ const ProfComponent = () => {
         <div className="social">
           <p>Check out my</p>
           <Fade className="social-icons" direction="right" delay={1000} cascade damping={.3} triggerOnce={true}>
-            <Tooltip arrow title="GutHub">
+            <Tooltip arrow title="GitHub">
               <span>
-                <a href="https://github.com/EzequielBrito99" target='_blank' rel="noreferrer">
+                <a href="https://github.com/EzequielBrito99" target='_blank' rel="noreferrer" aria-label="github">
                   <GitHubIcon fontSize='small' />
                 </a>
               </span>
             </Tooltip>
             <Tooltip arrow title="LinkedIn">
               <span>
-                <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252" target='_blank' rel="noreferrer">
+                <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252" target='_blank' rel="noreferrer" aria-label="linkedin">
                   <LinkedInIcon fontSize='small' />
                 </a>
               </span>

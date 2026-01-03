@@ -3,7 +3,6 @@ import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import HandymanIcon from '@mui/icons-material/Handyman';
-import SettingsSystemDaydreamIcon from '@mui/icons-material/SettingsSystemDaydream';
 import SpeedIcon from '@mui/icons-material/Speed';
 import './Services.scss';
 
@@ -11,7 +10,7 @@ const Services = () => {
   return (
     <section className="services-wrapper" id="services">
       <Slide direction="down" triggerOnce={true}>
-        <h4>
+        <h4 data-testid="section-title">
           My <span className="green">services</span>
         </h4>
         <h1>What I Do</h1>

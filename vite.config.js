@@ -14,4 +14,20 @@ export default defineConfig({
       '@': '/src',
     },
   },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/setupTests.js',
+    coverage: {
+      provider: 'v8',
+      exclude: [
+        'node_modules/**',
+        'src/**/*.scss',
+        'src/**/*.svg',
+        '**/*.d.ts',
+        'test/**',
+        'public/**'
+      ],
+    }
+  },
 });

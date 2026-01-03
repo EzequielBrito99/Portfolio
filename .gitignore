@@ -28,3 +28,6 @@ coverage/
 test-results/
 html/
 *.lcov
+
+# Lighthouse CI
+.lighthouseci/

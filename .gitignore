@@ -31,3 +31,7 @@ html/
 
 # Lighthouse CI
 .lighthouseci/
+*storybook.log
+
+# Storybook
+storybook-static

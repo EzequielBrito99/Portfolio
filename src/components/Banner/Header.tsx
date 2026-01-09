@@ -8,7 +8,7 @@ const Header = () => {
   const [bar, setBar] = useState(false);
 
   const handleStatusBar = () => {
-    if (window.screen.width < 640) {
+    if (window.innerWidth < 640) {
       setBar(!bar);
     }
   }

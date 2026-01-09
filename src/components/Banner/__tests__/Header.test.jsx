@@ -4,11 +4,12 @@ import Header from '../Header';
 
 describe('Header Component', () => {
   const setScreenWidth = (width) => {
-    Object.defineProperty(window, 'screen', {
+    Object.defineProperty(window, 'innerWidth', {
       writable: true,
       configurable: true,
-      value: { width },
+      value: width,
     });
+    window.dispatchEvent(new Event('resize'));
   };
 
   const links = ['Home', 'Services', 'Skills', 'Projects', 'Contact'];

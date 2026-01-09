@@ -3,31 +3,36 @@ import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import storybook from "eslint-plugin-storybook"
+import tseslint from 'typescript-eslint'
 
-export default [
-  // 1. Ignorados (reemplaza globalIgnores)
+export default tseslint.config(
   {
     ignores: ['dist', 'html', 'coverage'],
   },
-  
-  // 2. Configuración base de JS
-  js.configs.recommended,
-
-  // 3. Configuración para los archivos
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.cjs'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+  {
+    files: ['**/*.{js,jsx,ts,tsx}'], 
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
     languageOptions: {
       ecmaVersion: 2020,
+      parser: tseslint.parser, 
       globals: {
         ...globals.browser,
       },
       parserOptions: {
         ecmaVersion: 'latest',
-        ecmaFeatures: { jsx: true },
         sourceType: 'module',
       },
     },
@@ -37,10 +42,9 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'no-unused-vars': 'off',
     },
   },
-
-  // 4. Configuración de Storybook
   ...storybook.configs['flat/recommended'],
-]
+)

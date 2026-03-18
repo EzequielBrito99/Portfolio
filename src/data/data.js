@@ -57,6 +57,9 @@ export const skills = [
     'react',
     'redux',
     'next',
+    'nest',
+    'postgres',
+    'docker',
     'git',
-    'github'
+    'github',
 ];

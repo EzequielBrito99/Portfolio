@@ -15,9 +15,9 @@ const ProfComponent = () => {
         </h4>
         <h1 className="green">Ezequiel Brito</h1>
         <Fade cascade triggerOnce={true}>
-          <h3>Senior Front-End Developer</h3>
+          <h3>Mid-Senior Full-Stack Developer</h3>
           <p>
-            I am a highly skilled Senior Front-End Developer with over 4 years of experience in building responsive, user-friendly, and visually appealing web applications. My expertise lies in creating seamless user experiences and delivering high-quality code that meets modern web standards.
+            I am a highly skilled Mid-Senior Full-Stack Developer with over 4 years of experience in building responsive, user-friendly, and visually appealing web applications. My expertise lies in creating seamless user experiences and delivering high-quality code that meets modern web standards.
           </p>
         </Fade>
         <a href='https://wa.me/message/ST66CS7X7BHZM1' target='_blank' rel="noreferrer">Let's talk</a>

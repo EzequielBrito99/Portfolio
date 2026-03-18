@@ -15,8 +15,8 @@ describe('ProfComponent', () => {
   });
 
   it('renders the job title and description', () => {
-    expect(screen.getByRole('heading', { name: /senior front-end developer/i })).toBeInTheDocument();
-    expect(screen.getByText(/highly skilled senior front-end developer/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /mid-senior full-stack developer/i })).toBeInTheDocument();
+    expect(screen.getByText(/highly skilled mid-senior full-stack developer/i)).toBeInTheDocument();
   });
 
   it('renders call-to-action buttons', () => {

@@ -29,7 +29,7 @@ El portafolio incluye una sección de servicios, proyectos destacados y un formu
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/portfolio.git
+   git clone https://github.com/ezequielbrito99/portfolio.git
    ```
 2. Navega al directorio del proyecto:
    ```bash

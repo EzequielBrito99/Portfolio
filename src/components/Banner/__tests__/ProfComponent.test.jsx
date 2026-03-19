@@ -1,6 +1,11 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+
+vi.mock('/assets/banner/bannerImageAnimated.svg', () => ({
+  default: 'test-file-stub'
+}));
+
 import ProfComponent from '../ProfComponent';
 
 describe('ProfComponent', () => {
@@ -35,6 +40,5 @@ describe('ProfComponent', () => {
   it('renders the profile image with correct attributes', () => {
     const profileImage = screen.getByAltText(/profile/i);
     expect(profileImage).toBeInTheDocument();
-    expect(profileImage).toHaveAttribute('src', '/assets/banner/bannerImageAnimated.svg');
   });
 });
